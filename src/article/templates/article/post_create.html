@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Post Create</title>
+</head>
+<body>
+
+
+<h1>Gönderi Ekleme</h1>
+<form action="" method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit">Create Post</button>
+</form>
+
+
+</body>
+</html>

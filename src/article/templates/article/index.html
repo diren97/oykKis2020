@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Anasayfa</title>
+</head>
+<body>
+
+
+<h1 style="color:red">Anasayfa</h1>
+<span>Kullanıcı bilgisi{{request.user}}</span><br>
+
+{{request}}
+{%if messages %}
+{% for message in messages %}
+<p style="color:cyan">{{message}}</p>
+{% endfor %}
+{% endif %}
+
+<p>Bla bla bla</p>
+<hr>
+<ul>
+    <li>{{django}}</li>
+    <li>{{flask }}</li>
+    <li>{{pehape }}</li>
+    <li>{{now }}</li>
+
+</ul>
+
+</body>
+</html>
